@@ -1,0 +1,6 @@
+steps:
+  - name: gcr.io/$PROJECT_ID/state
+    args: ['state', 'deploy', 'ActiveState/ActivePython-3.6', '--path', '/workspace/.state']
+  - name: gcr.io/$PROJECT_ID/state
+    args: ['pytest']
+    cloudbuild.yaml
